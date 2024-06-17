@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка с анимацией</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="lift">
+    <div class="left">
+        <img src="img/frame2.png" alt="Image 1">
+        <img src="img/frame1.png" alt="Image 2">
+        <img src="img/frame3.png" alt="Image 3">
+        <img src="img/frame4.png" alt="Image 4">
+    </div>
+
+    <div class="right">
+        <div class="test">
+            <div class="control-buttons">
+                <button id="select-button">Выбрать</button>
+                <button id="stop-button" style="display: none;">Стоп</button>
+            </div>
+
+            <div class="floor-buttons" style="display: none;">
+                <button class="floor-button" data-floor="1">1</button>
+                <button class="floor-button" data-floor="2">2</button>
+                <button class="floor-button" data-floor="3">3</button>
+                <button class="floor-button" data-floor="4">4</button>
+                <button class="floor-button" data-floor="5">5</button>
+                <button class="floor-button" data-floor="6">6</button>
+                <button class="floor-button" data-floor="7">7</button>
+            </div>
+
+            <div class="scene">
+                <div class="building"></div>
+                <div class="elevator-shaft">
+                    <div class="elevator">
+                        <div class="doors">
+                            <div class="door left"></div>
+                            <div class="door right"></div>
+                        </div>
+                        <div class="floor-display">1</div>
+                    </div>
+                </div>
+                <div class="floor-number" data-floor="1">1</div>
+                <div class="floor-number" data-floor="2">2</div>
+                <div class="floor-number" data-floor="3">3</div>
+                <div class="floor-number" data-floor="4">4</div>
+                <div class="floor-number" data-floor="5">5</div>
+                <div class="floor-number" data-floor="6">6</div>
+                <div class="floor-number" data-floor="7">7</div>
+                <div class="person" id="person"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+r<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Улица, ночь и путешествия</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index">
+    <header>
+        <h1>Выбери подъезд!</h1>
+    </header>
+    <section class="houses">
+        <div class="house" data-house="1">
+            <img src="img/panels7.png" alt="House 1">
+            <img class="hover-image" src="img/padik.png" alt="House 1">
+            <button class="select-button" id="button-house-1">Войти</button>
+        </div>
+        <div class="house" data-house="2">
+            <img src="img/panels8.png" alt="House 2">
+            <img class="hover-image" src="img/padik.png" alt="House 2">
+            <button class="select-button" id="button-house-2">Войти</button>
+        </div>
+        <div class="house" data-house="3">
+            <img src="img/panels13.png" alt="House 3">
+            <img class="hover-image" src="img/padik.png" alt="House 3">
+            <button class="select-button" id="button-house-3">Войти</button>
+        </div>
+    </section>
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const houses = document.querySelectorAll('.house');
+            const buttons = document.querySelectorAll('.select-button');
+
+            houses.forEach(house => {
+                house.addEventListener('click', () => {
+                    house.classList.toggle('active');
+                });
+            });
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Остановка распространения события клика
+                    window.location.href = 'lift.html'; // Укажите нужную ссылку здесь
+                });
+            });
+        });
+    </script>
+</body>
+</html>
