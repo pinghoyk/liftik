@@ -1,0 +1,28 @@
+.floor {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floor span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.floor.active {
+  background-color: #dda0dd;
+}
+
+.floor.called {
+  background-color: #db7093;
+}
+
+.floor.passengerCalled {
+  background-color: #ff69b4;
+}

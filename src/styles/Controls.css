@@ -1,0 +1,22 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Расстояние между кнопками */
+  margin-bottom: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #9370db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #8a2be2;
+}

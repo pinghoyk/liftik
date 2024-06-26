@@ -1,0 +1,17 @@
+.elevator-shaft {
+  position: relative;
+  width: 80px;
+  border: 2px solid #d8bfd8;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floors {
+  display: flex;
+  flex-direction: column;
+}
